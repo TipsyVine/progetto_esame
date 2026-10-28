@@ -1,0 +1,81 @@
+/* ========== VARIABILI ========== */
+
+:root {   
+    /* colori funzionali (lezione 2) */
+    --testo: #222222;
+    --testo-secondario: #595959;
+    --linea: #cccccc;
+    --sfondo-evidenza: #c6efff;
+    --sfondo-footer: #e6e6e6;
+    --link: #0b57a4;
+
+     /* scaladi spaziatura */
+    --larghezza-colonna: 720px;
+    --spazio-s: 0.5rem;
+    --spazio-m: 1rem;
+    --spazio-l: 2rem;
+    --spazio-xl: 4rem;
+}
+
+/* ========== RESET E BASE ========== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    font-family: "Inter", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--testo);
+    padding: 12px;
+}
+
+.colonna {
+    max-width: var(--larghezza-colonna);
+    background-color: var(--sfondo-footer);
+    margin: auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: auto;
+    padding: auto;
+}
+
+
+/* ========== HEADER ========== */
+header {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--testo-tenue);
+}
+
+
+/* ========== SEZIONI ========== */
+.in-breve {
+    background-color: var(--sfondo-evidenza);
+    padding: var(--spazio-m) 0;
+}
+
+/* ========== NAV ========== */
+nav ul li {
+    display: inline-block;
+}
+
+/* ========== FOOTER ========== */
+footer{
+    background-color: var(--sfondo-footer);
+}
+
+@media (max-width: 600px) {
+    .colonna {
+        padding: 0 var(--spazio-m);
+    }
+
+}
